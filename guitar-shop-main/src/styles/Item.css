@@ -1,0 +1,51 @@
+.item-container {
+  position: relative;
+  top: 12vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 0px 5rem 2rem 5rem;
+}
+
+.add-to-basket,
+.remove-from-basket {
+  font-size: 3rem;
+  color: green;
+  cursor: pointer;
+}
+
+.remove-from-basket {
+  color: red;
+}
+
+.basket-modifier {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 2rem;
+}
+
+.item-display-image {
+  max-width: 60%;
+}
+
+@media (max-width: 768px) {
+  .item-container {
+    gap: 10px;
+    font-size: 0.8rem;
+  }
+  .add-to-basket,
+  .remove-from-basket {
+    font-size: 2rem;
+  }
+  .basket-modifier {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2rem;
+  }
+  .item-display-image {
+    max-width: 60%;
+  }
+}
